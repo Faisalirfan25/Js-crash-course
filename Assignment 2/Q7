@@ -1,0 +1,15 @@
+function getFromLocalStorage(key) {
+  const serializedObject = localStorage.getItem(key);
+  if (serializedObject) {
+    const pairs = serializedObject.split('&');
+    const object = {};
+    pairs.forEach(pair => {
+      const [k, v] = pair.split('=');
+      object[k] = decodeURIComponent(v);
+    });
+    return object;
+  }
+  return null;
+}
+
+

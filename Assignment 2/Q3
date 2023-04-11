@@ -1,0 +1,8 @@
+function addParagraph(text) {
+  const newParagraph = document.createElement('p');
+  newParagraph.textContent = text;
+  document.body.appendChild(newParagraph);
+}
+
+// Example usage:
+addParagraph('HELLO MY NAME IS FAISAL.');

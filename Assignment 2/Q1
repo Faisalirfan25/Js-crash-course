@@ -1,0 +1,10 @@
+function createAdder(num) {
+  return function(value) {
+    return num + value;
+  }
+}
+
+// Example usage:
+const addFive = createAdder(5);
+console.log(addFive(10)); // Output: 15
+console.log(addFive(20)); // Output: 25

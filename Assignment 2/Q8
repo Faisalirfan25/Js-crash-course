@@ -1,0 +1,6 @@
+function saveObjectToLocalStorage(object) {
+  Object.entries(object).forEach(([key, value]) => {
+    localStorage.setItem(key, value);
+  });
+}
+

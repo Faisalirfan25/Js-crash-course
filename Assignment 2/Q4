@@ -1,0 +1,7 @@
+function addListItem(text) {
+  const newItem = document.createElement('li');
+  newItem.textContent = text;
+  const list = document.querySelector('ul');
+  list.appendChild(newItem);
+}
+
